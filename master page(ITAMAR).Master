@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master page(ITAMAR).master.cs" Inherits="ASSINMENT_2.master_page_ITAMAR_" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Panel ID="panelHeader" runat="server" HorizontalAlign="Center">
+                <asp:Label ID="hedear" runat="server" Font-Bold="True" Font-Size="XX-Large" Text="Itamar Kahalani"></asp:Label>
+            </asp:Panel>
+            <asp:Panel ID="panelMenu" runat="server" HorizontalAlign="Center">
+                <asp:HyperLink ID="homeLink" runat="server" NavigateUrl="~/Home.aspx">Home</asp:HyperLink>
+                &nbsp;<asp:HyperLink ID="CVLink" runat="server" NavigateUrl="~/CV(ITAMAR).aspx">CV</asp:HyperLink>
+                &nbsp;<asp:HyperLink ID="hobbiesLink" runat="server" NavigateUrl="~/Hobbies and lidestyle(ITAMAR).aspx">Hobbies and life style</asp:HyperLink>
+                &nbsp;<asp:HyperLink ID="contactLink" runat="server" NavigateUrl="~/Contact(ITAMAR).aspx">Contact</asp:HyperLink>
+            </asp:Panel>
+            <br />
+            <br />
+            <br />
+            <br />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <br />
+            <br />
+            <br />
+            <asp:Panel ID="fotterPanel" runat="server" HorizontalAlign="Center">
+                <asp:Label ID="Label1" runat="server" Text="© 2025 Itamar Kahalani | Computer Science Student | European University Cyprus" Font-Size="Small"></asp:Label>
+            </asp:Panel>
+        </div>
+    </form>
+</body>
+</html>
